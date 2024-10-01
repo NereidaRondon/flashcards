@@ -10,12 +10,12 @@ function Cards(props) {
 
   return (
     <>
-      <div className='flex flex-col justify-center justify-items-center items-center rounded-xl p-5 max-w-full text-center bg-gray-100 border-gray-800 drop-shadow-2xl'>
+      <div className='flex flex-col justify-center justify-items-center items-center rounded-xl p-5 max-w-full lg:mx-40 text-center bg-gray-100 border-gray-800 drop-shadow-2xl'>
         <div className='text-xl'>
           {showAnswer ? (
-            <p className='h-48 md:h-32 lg:h-20'>{props.flashcard.explanation}</p>
+            <p className='h-48 md:h-32 lg:h-14'>{props.flashcard.explanation}</p>
           ) : (
-            <h3 className='h-48 md:h-32 lg:h-20'>{props.flashcard.command}</h3>
+            <h3 className='h-48 md:h-32 lg:h-14'>{props.flashcard.command}</h3>
           )}
         </div>
 
