@@ -1,0 +1,12 @@
+.logo {
+  width: 250px;
+  transition: all 0.5s;
+}
+.logo:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 3px #3678e3);
+}
+
+/* div {
+  border: 1px solid red;
+} */
