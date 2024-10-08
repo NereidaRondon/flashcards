@@ -47,7 +47,7 @@ function App() {
         <div className='bg-gray-700 m-8 p-8 rounded-xl border-2 border-blue-300 lg:mx-32 '>
           <div className='container  bg-gray-700 text-center text-white'>
             <div className='flex justify-center'>
-              <img src={cards} className='logo w-2/5 md:w-1/3 lg:w-1/5' alt='Flashcards' />
+              <img src={cards} className='logo w-1/5 lg:w-1/6' alt='Flashcards' />
             </div>
 
             <h1 className='mb-12 lg:mb-6 text-3xl text-white font-bold text-center'>
@@ -63,15 +63,17 @@ function App() {
           <div className='p-4 md:p-4'>
             <Cards flashcard={flashcardsArray[currentCardIndex]} />
 
-            <div className='flex justify-between mt-4 lg:mx-40'>
+            <div className='flex justify-between w-2/3 mt-4 m-auto'>
               <button
-                className='bg-amber-600 text-white px-4 py-2 rounded'
+                className='bg-amber-600 text-white mx-2 px-2 py-2 w-40 rounded'
                 disabled={cardHistory.length <= 1}
                 onClick={handlePreviousCard}>
                 Previous Card
               </button>
 
-              <button className='bg-blue-500 text-white px-4 py-2 rounded' onClick={handleNextCard}>
+              <button
+                className='bg-blue-500 text-white mx-2 px-2 py-2 w-40 rounded'
+                onClick={handleNextCard}>
                 Next Card
               </button>
             </div>

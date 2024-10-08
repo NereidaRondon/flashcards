@@ -38,7 +38,7 @@ function Cards(props) {
   return (
     <>
       <div
-        className={`flex flex-col justify-center justify-items-center items-center rounded-xl p-5 max-w-full lg:mx-20 xl:mx-50 text-center bg-gray-100 border-gray-800 drop-shadow-2xl ${backgroundColor}`}>
+        className={`flex flex-col justify-center justify-items-center items-center rounded-xl p-5 sm:w-2/3 m-auto lg:m-auto  text-center bg-gray-100 border-gray-800 drop-shadow-2xl ${backgroundColor}`}>
         <div className='text-2xl'>
           {showAnswer ? (
             <h3 className='pt-4 lg:pt-6 text-4xl lg:text-5xl h-48 md:h-32 lg:h-14'>
